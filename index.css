@@ -1,513 +1,136 @@
-/* default-state */
-
-position: relative;
-width: 600px;
-height: 1161px;
-
-background: #FFFFFF;
-
-
-/* item-3 */
-
-position: absolute;
-width: 508px;
-height: 140px;
-left: 46px;
-top: 604px;
-
-
-
-/* divider */
-
-position: absolute;
-width: 504px;
-height: 0px;
-left: 50px;
-top: 744px;
-
-border: 1px solid #D2D2D2;
-
-
-/* add-btn */
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 612px;
-
-
-
-/* Text */
-
-position: absolute;
-width: 27px;
-height: 28.5px;
-left: 516px;
-top: 623px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 32px;
-line-height: 24px;
-/* or 75% */
-text-align: center;
-
-color: #3C3C3C;
-
-
-
-/* Ellipse 1 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 612px;
-
-border: 1.5px solid #DEDEDE;
-
-
-/* item price */
-
-position: absolute;
-width: 18px;
-height: 24px;
-left: 147px;
-top: 669px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-/* identical to box height, or 120% */
-
-color: #000000;
-
-
-
-/* item description */
-
-position: absolute;
-width: 358px;
-height: 24px;
-left: 147px;
-top: 637px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-color: #8B8B8B;
-
-
-
-/* item graphic */
-
-position: absolute;
-width: 70px;
-height: 89px;
-left: 46px;
-top: 604px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 78.72px;
-line-height: 98px;
-/* or 125% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #000000;
-
-opacity: 0.72;
-
-
-/* item title */
-
-position: absolute;
-width: 38px;
-height: 17px;
-left: 147px;
-top: 611.2px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 17px;
-/* identical to box height, or 60% */
-
-color: #000000;
-
-
-
-/* item-2 */
-
-position: absolute;
-width: 508px;
-height: 140px;
-left: 46px;
-top: 419px;
-
-
-
-/* divider */
-
-position: absolute;
-width: 504px;
-height: 0px;
-left: 50px;
-top: 559px;
-
-border: 1px solid #D2D2D2;
-
-
-/* add-btn */
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 427px;
-
-
-
-/* Text */
-
-position: absolute;
-width: 27px;
-height: 28.5px;
-left: 516px;
-top: 438px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 32px;
-line-height: 24px;
-/* or 75% */
-text-align: center;
-
-color: #3C3C3C;
-
-
-
-/* Ellipse 1 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 427px;
-
-border: 1.5px solid #DEDEDE;
-
-
-/* item price */
-
-position: absolute;
-width: 18px;
-height: 24px;
-left: 147px;
-top: 484px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-/* identical to box height, or 120% */
-
-color: #000000;
-
-
-
-/* item description */
-
-position: absolute;
-width: 358px;
-height: 24px;
-left: 147px;
-top: 452px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-color: #8B8B8B;
-
-
-
-/* item graphic */
-
-position: absolute;
-width: 70px;
-height: 89px;
-left: 46px;
-top: 419px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 78.72px;
-line-height: 98px;
-/* or 125% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #000000;
-
-opacity: 0.72;
-
-
-/* item title */
-
-position: absolute;
-width: 99px;
-height: 17px;
-left: 147px;
-top: 426.2px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 17px;
-/* identical to box height, or 60% */
-
-color: #000000;
-
-
-
-/* item-1 */
-
-position: absolute;
-width: 508px;
-height: 140px;
-left: 46px;
-top: 234px;
-
-
-
-/* divider */
-
-position: absolute;
-width: 504px;
-height: 0px;
-left: 50px;
-top: 374px;
-
-border: 1px solid #D2D2D2;
-
-
-/* add-btn */
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 242px;
-
-
-
-/* Text */
-
-position: absolute;
-width: 27px;
-height: 28.5px;
-left: 516px;
-top: 253px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 32px;
-line-height: 24px;
-/* or 75% */
-text-align: center;
-
-color: #3C3C3C;
-
-
-
-/* Ellipse 1 */
-
-box-sizing: border-box;
-
-position: absolute;
-width: 50px;
-height: 50px;
-left: 504px;
-top: 242px;
-
-border: 1.5px solid #DEDEDE;
-
-
-/* item price */
-
-position: absolute;
-width: 19px;
-height: 24px;
-left: 147px;
-top: 299px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-/* identical to box height, or 120% */
-
-color: #000000;
-
-
-
-/* item description */
-
-position: absolute;
-width: 358px;
-height: 24px;
-left: 147px;
-top: 267px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-color: #8B8B8B;
-
-
-
-/* item graphic */
-
-position: absolute;
-width: 70px;
-height: 89px;
-left: 46px;
-top: 234px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 78.72px;
-line-height: 98px;
-/* or 125% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.02em;
-
-color: #000000;
-
-opacity: 0.72;
-
-
-/* item title */
-
-position: absolute;
-width: 43px;
-height: 17px;
-left: 147px;
-top: 241.2px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 17px;
-/* identical to box height, or 60% */
-
-color: #000000;
-
-
-
-/* header */
-
-position: absolute;
-width: 600px;
-height: 167px;
-left: 0px;
-top: 0px;
-
-
-
-/* bg img */
-
-position: absolute;
-width: 600px;
-height: 167px;
-left: 0px;
-top: 0px;
-
-background: #FFFFFF;
-
-
-/* ferks-guare-KEZdWfYD-ow-unsplash 1 */
-
-position: absolute;
-width: 600px;
-height: 400px;
-left: 0px;
-top: -153px;
-
-background: url(ferks-guare-KEZdWfYD-ow-unsplash.jpg);
-
-
-/* Jimmy’s Diner */
-
-position: absolute;
-width: 169.28px;
-height: 24px;
-left: 46.07px;
-top: 46px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 39px;
-line-height: 24px;
-/* identical to box height, or 62% */
-text-align: center;
-
-color: #FFFFFF;
-
-
-
-/* The best burgers and pizzas in town. */
-
-position: absolute;
-width: 275.46px;
-height: 8px;
-left: 46.07px;
-top: 89px;
-
-font-family: 'Smythe';
-font-style: normal;
-font-weight: 400;
-font-size: 22.4216px;
-line-height: 14px;
-/* or 62% */
-
-color: #FFFFFF;
-
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Smythe", system-ui;
+    width: 600px;
+    /* height: 1161px; */
+    background-color: #F5F5F5;
+}
+
+header {
+    background-image: url(assets/header.jpeg);
+    width: 600px;
+    height: 167px;
+    background-size: cover;
+    margin: 0 auto;
+    color: white;
+}
+
+.header-text {
+    text-align: start;
+    padding-left: 46px;
+    padding-top: 9px;
+}
+
+.pizza, .burger, .beer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 46px 45px;
+    height: 140px;
+    border-bottom: 2px solid rgb(179, 175, 175);
+}
+
+.pizza-info, .burger-info, .beer-info {
+    display: flex;
+    gap: 31px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 9px;
+}
+
+h2, h3, p {
+    margin: 0;
+}
+
+.img {
+    width: 70px;
+    height: 89px;
+    font-size: 70px;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 67px;
+
+}
+
+.plus {
+    width: 50px;
+    height: 50px;
+    font-size:30px;
+    border:2px solid rgb(179, 175, 175);
+    border-radius: 50%;
+}
+
+.plus:hover {
+    cursor: pointer;
+    background-color: gray;
+    transition: .5s;
+}
+
+p {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.bill {
+    text-align: center;
+
+}
+
+.items {
+    text-align: start;
+    display: flex;
+    margin: 20px 56px 0 56px;
+
+    justify-content: space-between;
+}
+
+.each-item {
+    display: flex;
+    gap: 10px;
+}
+
+.remove {
+    color: rgb(179, 175, 175);
+}
+
+.remove:hover {
+    cursor: pointer;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-top: 20px;
+    border-top: 2px solid rgb(179, 175, 175);
+    padding-top:20px ;
+}
+
+#submit {
+    height: 60px;
+    width: 508px;
+    background-color: #16DB99;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    margin: 20px auto;
+}
+
+#submit:hover {
+    background-color: #08b47b;
+    transition: .5s;
+    cursor: pointer;
+}
