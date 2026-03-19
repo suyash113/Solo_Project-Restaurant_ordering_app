@@ -5,17 +5,15 @@ const plus = document.querySelectorAll('.plus')
 const mainBody = document.querySelector('main')
 
 let bill = document.createElement('div')
+bill.classList.add("bill")
 
+let totalItems = document.createElement('div')
 
-bill.innerHTML = `<div class='bill'>
-            <h2>your Order</h2>
-            </div> 
-            <div class='items'>
-            </div>
+let totalPrice = document.createElement("div")
+totalPrice.classList.add("total-price")
 
-            <button id='submit'>Complete Order</button>`
-
-let items = document.querySelector('.items')
+const subBtn = document.createElement('button')
+subBtn.id = "submit"
 
 plus.forEach(plusBtn => { 
     plusBtn.addEventListener('click', function() {
@@ -26,23 +24,48 @@ plus.forEach(plusBtn => {
         totalCost += itemPrice;
         
         const item = document.createElement('div')
+        item.classList.add("each-item")
         item.innerHTML = `
-                <div class='each-item'>
-                    <h2>${itemName}</h2>
-                    <p class='remove'>remove</p>
-                </div>
-                <div>$${itemPrice}</div>
-                <div class='total-price'>
-                    <h2>Total Price:</h2>
-                    <div>$${totalCost}</div>
-                </div>
-            
+                        <h2>${itemName}</h2>
+                        <p class='remove'>remove</p>
             `
 
-        items.innerHTML += item.innerHTML
+        let eachItemPrice = document.createElement("div")
+        eachItemPrice.textContent = `$${itemPrice}`
 
-        mainBody.appendChild(bill) 
+        bill.innerHTML = `
+                <h2>your Order</h2>
+                `
+        
+        let items = document.createElement('div')
+        items.classList.add("items")
 
+       
+
+        totalPrice.innerHTML = `
+            <h2>Total Price:</h2>
+                        <div>$${totalCost}</div>`
+
+        mainBody.appendChild(bill)
+
+        items.appendChild(item)
+
+
+        items.appendChild(eachItemPrice)
+
+
+        console.log(items.innerHTML)
+
+
+        subBtn.textContent = `Complete Order`
+
+        totalItems.appendChild(items)
+
+        mainBody.appendChild(totalItems)
+
+        mainBody.appendChild(totalPrice)
+
+        mainBody.appendChild(subBtn)
 
     })
 })
