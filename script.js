@@ -8,6 +8,7 @@ let bill = document.createElement('div')
 bill.classList.add("bill")
 
 let totalItems = document.createElement('div')
+totalItems.classList.add("total-items")
 
 let totalPrice = document.createElement("div")
 totalPrice.classList.add("total-price")
@@ -27,7 +28,7 @@ plus.forEach(plusBtn => {
         item.classList.add("each-item")
         item.innerHTML = `
                         <h2>${itemName}</h2>
-                        <p class='remove'>remove</p>
+                        <p class='remove' data-price='${itemPrice}'>remove</p>
             `
 
         let eachItemPrice = document.createElement("div")
@@ -40,11 +41,44 @@ plus.forEach(plusBtn => {
         let items = document.createElement('div')
         items.classList.add("items")
 
-       
+        const removeBtn = document.querySelectorAll(".remove")
+        removeBtn.forEach(rmBtn => {
+            rmBtn.addEventListener("click", function(e) {
+                const itemRemove = e.target.closest('.items')
+                console.log(itemRemove)
 
-        totalPrice.innerHTML = `
-            <h2>Total Price:</h2>
+                const price = parseInt(e.target.dataset.price)
+                console.log(price)
+                totalCost -= price
+
+                console.log(totalCost)
+                
+                if(totalCost >= 22) {
+                    totalPrice.innerHTML = `
+                    <h2>Total Price:</h2>
+                        <div>10% Discount added $${totalCost*9/10}</div>`
+                } else {
+                    totalPrice.innerHTML = `
+                    <h2>Total Price:</h2>
                         <div>$${totalCost}</div>`
+                }
+
+                if (itemRemove) {
+                    itemRemove.remove()
+                }
+                
+            }, {once:true})
+        })
+
+        if(totalCost >= 22) {
+            totalPrice.innerHTML = `
+            <h2>Total Price:</h2>
+                <div>10% Discount added $${totalCost*9/10}</div>`
+        } else {
+            totalPrice.innerHTML = `
+            <h2>Total Price:</h2>
+                <div>$${totalCost}</div>`
+        }
 
         mainBody.appendChild(bill)
 
@@ -52,10 +86,6 @@ plus.forEach(plusBtn => {
 
 
         items.appendChild(eachItemPrice)
-
-
-        console.log(items.innerHTML)
-
 
         subBtn.textContent = `Complete Order`
 
