@@ -41,17 +41,13 @@ plus.forEach(plusBtn => {
         let items = document.createElement('div')
         items.classList.add("items")
 
-        const removeBtn = document.querySelectorAll(".remove")
-        removeBtn.forEach(rmBtn => {
-            rmBtn.addEventListener("click", function(e) {
+        item.addEventListener("click", function(e) {
+            if(e.target.classList.contains("remove")){   
                 const itemRemove = e.target.closest('.items')
-                console.log(itemRemove)
 
                 const price = parseInt(e.target.dataset.price)
-                console.log(price)
-                totalCost -= price
 
-                console.log(totalCost)
+                totalCost -= price
                 
                 if(totalCost >= 22) {
                     totalPrice.innerHTML = `
@@ -66,8 +62,8 @@ plus.forEach(plusBtn => {
                 if (itemRemove) {
                     itemRemove.remove()
                 }
-                
-            }, {once:true})
+            }
+            
         })
 
         if(totalCost >= 22) {
@@ -98,4 +94,47 @@ plus.forEach(plusBtn => {
         mainBody.appendChild(subBtn)
 
     })
+})
+
+subBtn.addEventListener("click", function() {
+    const modal = document.createElement("div")
+    modal.classList.add("modal")
+    modal.innerHTML = `<h2>Enter card details</h2>
+        <div class='input'>
+            <input type='text' class='details' id='name' placeholder='Enter your name'>
+            <input type='text' class='details' id='number' placeholder='Enter card number'>
+            <input type='text' class='details' id='cvv' placeholder='Enter CVV'>
+        </div>
+
+        <button id='pay-btn'>Pay</button>
+    `
+    mainBody.appendChild(modal)
+    document.getElementById("pay-btn").addEventListener("click", function() {
+        if (document.getElementById("name").value && document.getElementById("number").value && document.getElementById("cvv").value) {
+        
+        modal.style.display = 'none'
+
+        bill.remove()
+        totalItems.remove()
+        totalPrice.remove()
+        subBtn.remove()
+
+        const message = document.createElement('div')
+        message.classList.add("message")
+        message.innerHTML = `<h3>Thanks, James! Your order is on its way!</h3>
+                <p>Rate Your Order</p>
+
+                <div class='rating'>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+        `
+
+        mainBody.appendChild(message)
+    }
+    })
+
 })
