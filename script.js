@@ -121,7 +121,7 @@ subBtn.addEventListener("click", function() {
 
         const message = document.createElement('div')
         message.classList.add("message")
-        message.innerHTML = `<h3>Thanks, James! Your order is on its way!</h3>
+        message.innerHTML = `<h3>Thanks, ${document.getElementById("name").value}! Your order is on its way!</h3>
                 <p>Rate Your Order</p>
 
                 <div class='rating'>
