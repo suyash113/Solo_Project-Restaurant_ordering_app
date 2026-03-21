@@ -101,9 +101,9 @@ subBtn.addEventListener("click", function() {
     modal.classList.add("modal")
     modal.innerHTML = `<h2>Enter card details</h2>
         <div class='input'>
-            <input type='text' class='details' id='name' placeholder='Enter your name'>
-            <input type='text' class='details' id='number' placeholder='Enter card number'>
-            <input type='text' class='details' id='cvv' placeholder='Enter CVV'>
+            <input type='text' class='details' id='name' placeholder='Enter your name' required>
+            <input type='text' class='details' id='number' placeholder='Enter card number' required>
+            <input type='text' class='details' id='cvv' placeholder='Enter CVV' required>
         </div>
 
         <button id='pay-btn'>Pay</button>
